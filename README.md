@@ -14,21 +14,21 @@ Installation:
 You can install the package directly from GitHub:
 
 
-Usage:
+#Usage:
 
 import pandas as pd
 from returns_calculator import ReturnsCalculator
 
-# Example DataFrame
+Example DataFrame :
 df = pd.DataFrame({
     'asset': ['Asset1', 'Asset1', 'Asset2', 'Asset2'],
     'date': pd.to_datetime(['2020-01-01', '2021-01-01', '2020-01-01', '2021-01-01']),
     'price': [100, 120, 200, 220]
 })
 
-# Instantiate the ReturnsCalculator
+Instantiate the ReturnsCalculator :
 calculator = ReturnsCalculator(df, 'asset', 'date', 'price')
 
-# Calculate CAGR
+Calculate CAGR :
 cagr_df = calculator.cagr()
 print(cagr_df)
