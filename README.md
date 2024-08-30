@@ -12,8 +12,9 @@ ReturnsCalculator is a Python package designed to simplify the calculation of va
 ## Installation:
 
 You can install the package directly from GitHub:
-
-
+```
+pip install git+https://github.com/pgvetrivel/returns_calculator.git
+```
 ## Usage Example:
 
 ```python
