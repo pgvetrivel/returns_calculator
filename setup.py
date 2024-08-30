@@ -8,7 +8,7 @@ setup(
     description='A package for calculating financial returns.',
     author='Vetrivel Gomathinayagan',
     author_email='pgvetrivel@gmail.com',
-    packages=find_packages(),
+    packages=["calculator"],
     install_requires=[
         'pandas>=1.0.0',
         'numpy>=1.18.0'
