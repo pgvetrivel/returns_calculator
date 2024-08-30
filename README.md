@@ -19,7 +19,7 @@ pip install git+https://github.com/pgvetrivel/returns_calculator.git
 
 ```python
 import pandas as pd
-from returns_calculator import ReturnsCalculator
+from returnscalculator import calculator
 
 # Example DataFrame
 df = pd.DataFrame({
@@ -29,8 +29,8 @@ df = pd.DataFrame({
 })
 
 # Instantiate the ReturnsCalculator
-calculator = ReturnsCalculator(df, 'asset', 'date', 'price')
+calculatordf = calculator.ReturnsCalculator(df, 'asset', 'date', 'price')
 
 # Calculate CAGR
-cagr_df = calculator.cagr()
+cagr_df = calculatordf.cagr()
 print(cagr_df)
